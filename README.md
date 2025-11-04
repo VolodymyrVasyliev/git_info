@@ -25,6 +25,7 @@ git status - What stage is the project at now?
 git add . - save all changes
 git commit -m "[name save commit]" - sign saves
 git commit -am "[name save commit]" - sing and save changes
+git commit --am - update the last commit
 git push - push changes to git
 
 git pull - fetches all the latest changes from the remote repository(to pull changes from a branch that interests me, I need to be in it)
