@@ -11,6 +11,112 @@
       <h1 class="title">🧠 Terminal & Git Cheat Sheet</h1>
 
       <section class="section">
+        <h2 class="section-title">🌿 Git Commands</h2>
+        <ul class="command-list">
+          <li class="command-item">
+            <code class="command">git status</code> — What stage is the project
+            at now?
+          </li>
+          <br />
+          <li class="command-item">
+            <code class="command">git init</code> — initializes a local
+            repository
+          </li>
+          <li class="command-item">
+            <code class="command"
+              >git clone https://github.com/user/repo.git</code
+            >
+            — clones repo
+          </li>
+          <br />
+          <li class="command-item">
+            <code class="command">git branch</code> — a list of branches that
+            exist locally on the computer
+          </li>
+          <li class="command-item">
+            <code class="command">git branch -r</code> — shows only remote
+            branches
+          </li>
+          <li class="command-item">
+            <code class="command">git branch -a</code> — shows all branches,
+            both local and remote
+          </li>
+          <li class="command-item">
+            <code class="command">git branch "branch name"</code> — creates a
+            new branch
+          </li>
+          <li class="command-item">
+            <code class="command">git checkout "branch name"</code> — to go to
+            the selected branch
+          </li>
+          <li class="command-item">
+            <code class="command">git checkout -b "branch name"</code> —
+            combines 2 action commands
+          </li>
+          <br />
+          <li class="command-item">
+            <code class="command">git add .</code> — stages all changes
+          </li>
+          <li class="command-item">
+            <code class="command">git commit -m "msg"</code> — commits with
+            message
+          </li>
+          <li class="command-item">
+            <code class="command">git commit -am "msg"</code> — combines 2
+            action commands
+          </li>
+          <li class="command-item">
+            <code class="command">git commit --am</code> — updates last commit
+          </li>
+          <br />
+          <li class="command-item">
+            <code class="command">git push</code> — pushes changes to git
+          </li>
+          <br />
+          <li class="command-item">
+            <code class="command">git pull</code> — fetches all the latest
+            changes from the remote repository
+          </li>
+          <br />
+          <li class="command-item">
+            <code class="command">git merge "branch"</code> — merges branch
+          </li>
+          <li class="command-item">
+            <code class="command">git merge --abort</code> — undo a branch merge
+          </li>
+          <li class="command-item">
+            <code class="command">git branch -d "name"</code> — deletes local
+            branch
+          </li>
+          <li class="command-item">
+            <code class="command">git push origin --delete "name"</code> —
+            deletes a branch from a remote repository
+          </li>
+          <br />
+          <li class="command-item">
+            <code class="command">git stash</code> — stashes changes
+          </li>
+          <li class="command-item">
+            <code class="command">git stash save "my-comment"</code> — stash
+            with comment
+          </li>
+          <li class="command-item">
+            <code class="command">git stash list</code> — list stashes
+          </li>
+          <li class="command-item">
+            <code class="command">git stash apply stash@{id}</code> — apply a
+            specific Stash without deleting it
+          </li>
+          <li class="command-item">
+            <code class="command">git stash pop</code> — apply & remove stash
+          </li>
+          <li class="command-item">
+            <code class="command">git stash clear</code> — clear all stashes
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
         <h2 class="section-title">💻 Terminal Commands</h2>
         <ul class="command-list">
           <li class="command-item">
@@ -33,93 +139,6 @@
           </li>
           <li class="command-item">
             <code class="command">clear</code> — clears terminal screen
-          </li>
-        </ul>
-      </section>
-
-      <section class="section">
-        <h2 class="section-title">🌿 Git Commands</h2>
-        <ul class="command-list">
-          <li class="command-item">
-            <code class="command">git init</code> — initializes local repo
-          </li>
-          <li class="command-item">
-            <code class="command"
-              >git clone https://github.com/user/repo.git</code
-            >
-            — clones repo
-          </li>
-          <li class="command-item">
-            <code class="command">git branch</code> — lists local branches
-          </li>
-          <li class="command-item">
-            <code class="command">git branch -r</code> — lists remote branches
-          </li>
-          <li class="command-item">
-            <code class="command">git branch -a</code> — lists all branches
-          </li>
-          <li class="command-item">
-            <code class="command">git branch [name]</code> — creates branch
-          </li>
-          <li class="command-item">
-            <code class="command">git checkout [name]</code> — switches branch
-          </li>
-          <li class="command-item">
-            <code class="command">git checkout -b [name]</code> — creates &
-            switches
-          </li>
-          <li class="command-item">
-            <code class="command">git status</code> — shows status
-          </li>
-          <li class="command-item">
-            <code class="command">git add .</code> — stages all changes
-          </li>
-          <li class="command-item">
-            <code class="command">git commit -m "msg"</code> — commits with
-            message
-          </li>
-          <li class="command-item">
-            <code class="command">git commit -am "msg"</code> — stages & commits
-          </li>
-          <li class="command-item">
-            <code class="command">git commit --am</code> — updates last commit
-          </li>
-          <li class="command-item">
-            <code class="command">git push</code> — pushes changes
-          </li>
-          <li class="command-item">
-            <code class="command">git pull</code> — pulls changes
-          </li>
-          <li class="command-item">
-            <code class="command">git merge [branch]</code> — merges branch
-          </li>
-          <li class="command-item">
-            <code class="command">git branch -d [name]</code> — deletes local
-            branch
-          </li>
-          <li class="command-item">
-            <code class="command">git push origin --delete [name]</code> —
-            deletes remote branch
-          </li>
-          <li class="command-item">
-            <code class="command">git stash</code> — stashes changes
-          </li>
-          <li class="command-item">
-            <code class="command">git stash save "comment"</code> — stash with
-            comment
-          </li>
-          <li class="command-item">
-            <code class="command">git stash apply stash@{id}</code> — apply
-            stash
-          </li>
-          <li class="command-item">
-            <code class="command">git stash list</code> — list stashes
-          </li>
-          <li class="command-item">
-            <code class="command">git stash pop</code> — apply & remove stash
-          </li>
-          <li class="command-item">
-            <code class="command">git stash clear</code> — clear all stashes
           </li>
         </ul>
       </section>
